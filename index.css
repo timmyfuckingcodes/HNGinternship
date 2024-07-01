@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Playwrite DE Grund", cursive;
+    
+
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: sticky;
+    
+}
+.Header-name{
+    font-size: large;
+    
+}
+.paragraph-header{
+    padding-left: 40px;
+
+    width: 40vw
+}
+.paragraph{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 60px;
+    height: calc(100vh - 50px);
+    background-image: linear-gradient(white, rgb(253, 253, 193));;
+}
+.second-paragraphs-paragraph{
+    width: 40vw;
+}
+.second-paragraph{
+    margin-top: 50px;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .header-links{
+        display: none;
+    }
+    .paragraph{
+
+    }
+  }
+  @media only screen and (max-width: 720px) {
+  .second-paragraph{
+    flex-direction: column-reverse;
+    }
+    .second-paragraphs-paragraph{
+        width: 80vw;
+    }
+    .header-links{
+        display: none;
+    }
+    .paragraph{
+        padding: 20px 60px;
+    }
+    .paragraph-header{
+     display: none;
+    }
+    .paragraph-image{
+        width: 440px;
+    }
+           
+    }
+  
